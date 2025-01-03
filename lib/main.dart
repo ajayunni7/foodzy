@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 void main() {
-  runApp(Myapp());
+  runApp(const Myapp());
 }
 
 class Myapp extends StatelessWidget {
@@ -21,8 +21,29 @@ class LandingPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Scaffold(
+    return Scaffold(
       backgroundColor: Colors.white,
+      appBar: AppBar(
+        backgroundColor: Colors.white,
+      ),
+      body: Center(
+        child: Padding(
+          padding: const EdgeInsets.all(40.0),
+          child: Column(
+            children: [
+              const SizedBox(
+                height: 100,
+              ),
+              Image.asset('assets/Restaurant.png'),
+              const SizedBox(
+                height: 40,
+              ),
+              Text(
+                  'Enjoy the best restuarants or get what you need from neadby stores, delivered')
+            ],
+          ),
+        ),
+      ),
     );
   }
 }
