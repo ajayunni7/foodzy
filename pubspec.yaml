@@ -30,11 +30,14 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
+    
 
 
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^1.0.8
+  simple_animations: ^5.1.0
+  get: ^4.6.6
 
 dev_dependencies:
   flutter_test:
@@ -75,12 +78,14 @@ flutter:
   # list giving the asset and other descriptors for the font. For
   # example:
   fonts:
-    - family: NunitoSans
+    - family: Montserrat
       fonts:
-        - asset: fonts/NunitoSans-VariableFont_YTLC,opsz,wdth,wght.tff
+        - asset: fonts/Montserrat-VariableFont_wght.ttf
   #       - asset: fonts/Schyler-Italic.ttf
   #         style: italic
   #   - family: Trajan Pro
+
+  
   #     fonts:
   #       - asset: fonts/TrajanPro.ttf
   #       - asset: fonts/TrajanPro_Bold.ttf
